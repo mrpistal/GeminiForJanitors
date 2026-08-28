@@ -662,6 +662,56 @@ To use any model through OpenRouter, you must add `openrouter/` first and then t
 
 All API keys that start with `sk-or-v1-` will be used with OpenRouter.
 
+## **CommandCode** (`commandcode`)
+
+`https://commandcode.ai/docs/provider`
+
+To use any CommandCode model, you must add `commandcode/` at the start. \\
+CommandCode model names may themselves contain a `/` (e.g. `deepseek/deepseek-v4-flash`), \\
+so a full model spec looks like `commandcode/deepseek/deepseek-v4-flash`.
+
+All API keys that start with `user_` will be used with CommandCode.
+
+## **OpenCode Zen** (`opencode_zen`)
+
+`https://opencode.ai/docs/zen`
+
+To use any OpenCode Zen model, you must add `opencode_zen/` at the start.
+
+Only models served through Zen's OpenAI-compatible endpoint work: \\
+DeepSeek, GLM, Kimi, MiniMax and the free models. GPT/Grok (`/responses`), \\
+Claude/Qwen (`/messages`) and Gemini (`/models/<id>`) are not OpenAI-shaped \\
+and cannot be called through this proxy.
+
+You must add `opencode_zen/` at the start of any OpenCode Zen API key.
+
+## **OpenCode Go** (`opencode_go`)
+
+`https://opencode.ai/docs/go`
+
+To use any OpenCode Go model, you must add `opencode_go/` at the start. \\
+OpenCode Go is a $10/month subscription for open coding models (Grok 4.6, GLM, \\
+Kimi, MiniMax, Qwen, DeepSeek, ...). API keys come from the OpenCode Zen \\
+dashboard after subscribing to Go.
+
+You must add `opencode_go/` at the start of any OpenCode Go API key.
+
+## **OpenAI** (`openai`)
+
+`https://platform.openai.com/`
+
+To use any OpenAI model, you must add `openai/` at the start.
+
+All API keys that start with `sk-proj-` will be used with OpenAI.
+
+## **Groq** (`groq`)
+
+`https://console.groq.com/`
+
+To use any Groq model, you must add `groq/` at the start.
+
+All API keys that start with `gsk_` will be used with Groq.
+
 ## **Z.AI** (`z_ai`)
 
 `https://chat.z.ai/`
