@@ -712,6 +712,14 @@ To use any Groq model, you must add `groq/` at the start.
 
 All API keys that start with `gsk_` will be used with Groq.
 
+## **Kenari** (`kenari`)
+
+`https://kenari.id/docs/quickstart`
+
+To use any Kenari model, you must add `kenari/` at the start.
+
+All API keys that start with `kn-` will be used with Kenari.
+
 ## **Z.AI** (`z_ai`)
 
 `https://chat.z.ai/`

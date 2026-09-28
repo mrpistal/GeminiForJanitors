@@ -13,6 +13,7 @@ from .providers.deepseek import deepseek_generate_content
 from .providers.gemini import gemini_generate_content
 from .providers.gemini_cli import gemini_cli_generate_content
 from .providers.groq import groq_generate_content
+from .providers.kenari import kenari_generate_content
 from .providers.nvidia import nvidia_generate_content
 from .providers.openai import openai_generate_content
 from .providers.opencode_go import opencode_go_generate_content
@@ -31,6 +32,7 @@ API_KEY_PREFIXES = {
     "AQ.": "google",  # Authorization keys
     "csk-": "cerebras",
     "gsk_": "groq",
+    "kn-": "kenari",
     "nvapi-": "nvidia",
     "sk-ant-": "anthropic",
     "sk-or-v1-": "openrouter",
@@ -46,6 +48,7 @@ PROVIDER_FUNCS = {
     "gemini_cli": gemini_cli_generate_content,
     "google": gemini_generate_content,
     "groq": groq_generate_content,
+    "kenari": kenari_generate_content,
     "nvidia": nvidia_generate_content,
     "openai": openai_generate_content,
     "opencode_go": opencode_go_generate_content,
@@ -96,6 +99,7 @@ def _handle_request(
                 "- If the key is for DeepSeek, add `deepseek/` at the start of it.\n"
                 "- If the key is for Google AI or Vertex AI, add `google/` at the start of it.\n"
                 "- If the key is for Groq, add `groq/` at the start of it.\n"
+                "- If the key is for Kenari, add `kenari/` at the start of it.\n"
                 "- If the key is for Nvidia NIM, add `nvidia/` at the start of it.\n"
                 "- If the key is for OpenAI, add `openai/` at the start of it.\n"
                 "- If the key is for OpenCode Go, add `opencode_go/` at the start of it.\n"
